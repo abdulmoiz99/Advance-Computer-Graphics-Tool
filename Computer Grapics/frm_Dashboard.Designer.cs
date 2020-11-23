@@ -1,6 +1,6 @@
 ﻿namespace Computer_Grapics
 {
-    partial class frm_ImageCalculator
+    partial class frm_Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ImageCalculator));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Dashboard));
             this.PanelFloat = new System.Windows.Forms.Panel();
             this.Panel_SideBar = new System.Windows.Forms.Panel();
             this.btn_Frm_Active = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             this.Panel_SideBar.ForeColor = System.Drawing.Color.DarkCyan;
             this.Panel_SideBar.Location = new System.Drawing.Point(0, 0);
             this.Panel_SideBar.Name = "Panel_SideBar";
-            this.Panel_SideBar.Size = new System.Drawing.Size(336, 895);
+            this.Panel_SideBar.Size = new System.Drawing.Size(336, 974);
             this.Panel_SideBar.TabIndex = 10;
             // 
             // btn_Frm_Active
@@ -187,7 +187,7 @@
             this.Toppannel.Location = new System.Drawing.Point(336, 0);
             this.Toppannel.Name = "Toppannel";
             this.Toppannel.PrimerColor = System.Drawing.Color.White;
-            this.Toppannel.Size = new System.Drawing.Size(1250, 37);
+            this.Toppannel.Size = new System.Drawing.Size(1319, 37);
             this.Toppannel.Style = XanderUI.XUIGradientPanel.GradientStyle.Corners;
             this.Toppannel.TabIndex = 13;
             this.Toppannel.TopLeft = System.Drawing.Color.DeepSkyBlue;
@@ -201,23 +201,23 @@
             this.btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
-            this.btn_close.Location = new System.Drawing.Point(1191, 0);
+            this.btn_close.Location = new System.Drawing.Point(1260, 0);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(57, 35);
             this.btn_close.TabIndex = 9;
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
-            // frm_ImageCalculator
+            // frm_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1586, 895);
+            this.ClientSize = new System.Drawing.Size(1655, 974);
             this.Controls.Add(this.Toppannel);
             this.Controls.Add(this.Panel_SideBar);
             this.Controls.Add(this.btn_Minimizesd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_ImageCalculator";
+            this.Name = "frm_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_ImageCalculator";
             this.Panel_SideBar.ResumeLayout(false);

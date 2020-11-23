@@ -16,5 +16,10 @@ namespace Computer_Grapics
         {
             InitializeComponent();
         }
+
+        private void xuiSuperButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

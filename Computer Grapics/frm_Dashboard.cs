@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Computer_Grapics
 {
-    public partial class frm_ImageCalculator : Form
+    public partial class frm_Dashboard : Form
     {
-        public frm_ImageCalculator()
+        public frm_Dashboard()
         {
             InitializeComponent();
         }
