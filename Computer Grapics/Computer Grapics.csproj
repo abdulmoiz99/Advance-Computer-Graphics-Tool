@@ -50,30 +50,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes\ManipulateImage.cs" />
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Dashboard.cs">
+    <Compile Include="Forms\frm_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Dashboard.Designer.cs">
+    <Compile Include="Forms\frm_Dashboard.Designer.cs">
       <DependentUpon>frm_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_ImageManipulator.cs">
+    <Compile Include="Forms\frm_ImageManipulator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_ImageManipulator.Designer.cs">
+    <Compile Include="Forms\frm_ImageManipulator.Designer.cs">
       <DependentUpon>frm_ImageManipulator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_Dashboard.resx">
+    <EmbeddedResource Include="Forms\frm_Dashboard.resx">
       <DependentUpon>frm_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_ImageManipulator.resx">
+    <EmbeddedResource Include="Forms\frm_ImageManipulator.resx">
       <DependentUpon>frm_ImageManipulator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -98,5 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

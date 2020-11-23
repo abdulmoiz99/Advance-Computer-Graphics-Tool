@@ -1,35 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace Computer_Grapics
+namespace Computer_Grapics.Classes
 {
-    public partial class frm_ImageManipulator : Form
+    static class ManipulateImage
     {
-        bool isImageALoaded = false, isImageBLoaded = false;
-        private string imageAPath = "", imageBPath = "";
-        public frm_ImageManipulator()
-        {
-            InitializeComponent();
-        }
-
-        private void btn_AddImage_Click(object sender, EventArgs e)
-        {
-            if (isImageALoaded == false) MessageBox.Show("Please load image A first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (isImageBLoaded == false) MessageBox.Show("Please load image B first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else
-            {
-                pb_ImageResults.Image = AddImages(imageAPath, imageBPath);
-            }
-        }
-
-        private Bitmap AddImages(string image1Path, string image2Path)
+        public static Bitmap AddImages(string image1Path, string image2Path)
         {
             //Add image and display result in the picture box
             Bitmap imageA = new Bitmap(image1Path);
@@ -88,7 +68,8 @@ namespace Computer_Grapics
 
             return finalImage;
         }
-        private Bitmap SubtractImages(string image1Path, string image2Path)
+
+        public static Bitmap SubtractImages(string image1Path, string image2Path)
         {
             //Add image and display result in the picture box
             Bitmap imageA = new Bitmap(image1Path);
@@ -148,8 +129,7 @@ namespace Computer_Grapics
             return finalImage;
         }
 
-
-        private Bitmap MultiplyImage(string image1Path, string image2Path)
+        public static Bitmap MultiplyImage(string image1Path, string image2Path)
         {
             //Add image and display result in the picture box
             Bitmap imageA = new Bitmap(image1Path);
@@ -206,53 +186,6 @@ namespace Computer_Grapics
                 }
             }
             return finalImage;
-        }
-        private void btn_SubtractImage_Click(object sender, EventArgs e)
-        {
-            if (isImageALoaded == false) MessageBox.Show("Please load image A first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (isImageBLoaded == false) MessageBox.Show("Please load image B first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else
-            {
-                pb_ImageResults.Image = SubtractImages(imageAPath, imageBPath);
-            }
-        }
-
-        private void btn_MultiplyImage_Click(object sender, EventArgs e)
-        {
-            if (isImageALoaded == false) MessageBox.Show("Please load image A first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (isImageBLoaded == false) MessageBox.Show("Please load image B first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else
-            {
-                pb_ImageResults.Image = MultiplyImage(imageAPath, imageBPath);
-            }
-        }
-
-        private void btn_browseImage1_Click(object sender, EventArgs e)
-        {
-            isImageALoaded = false;
-
-            var open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                pb_imageA.Image = new Bitmap(open.FileName);
-                imageAPath = open.FileName;
-                isImageALoaded = true;
-            }
-        }
-
-        private void btn_browseImage2_Click(object sender, EventArgs e)
-        {
-            isImageBLoaded = false;
-
-            var open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                pb_imageB.Image = new Bitmap(open.FileName);
-                imageBPath = open.FileName;
-                isImageBLoaded = true;
-            }
         }
     }
 }
