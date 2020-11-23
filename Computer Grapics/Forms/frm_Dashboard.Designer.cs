@@ -36,7 +36,7 @@
             this.btn_Setting = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_systemInfo = new System.Windows.Forms.Button();
-            this.btn_DashBoard = new System.Windows.Forms.Button();
+            this.btn_Manipulate = new System.Windows.Forms.Button();
             this.btn_Minimizesd = new System.Windows.Forms.Button();
             this.xuiObjectEllipse1 = new XanderUI.XUIObjectEllipse();
             this.Toppannel = new XanderUI.XUIGradientPanel();
@@ -62,12 +62,12 @@
             this.Panel_SideBar.Controls.Add(this.button1);
             this.Panel_SideBar.Controls.Add(this.btn_systemInfo);
             this.Panel_SideBar.Controls.Add(this.PanelFloat);
-            this.Panel_SideBar.Controls.Add(this.btn_DashBoard);
+            this.Panel_SideBar.Controls.Add(this.btn_Manipulate);
             this.Panel_SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.Panel_SideBar.ForeColor = System.Drawing.Color.DarkCyan;
             this.Panel_SideBar.Location = new System.Drawing.Point(0, 0);
             this.Panel_SideBar.Name = "Panel_SideBar";
-            this.Panel_SideBar.Size = new System.Drawing.Size(336, 974);
+            this.Panel_SideBar.Size = new System.Drawing.Size(336, 899);
             this.Panel_SideBar.TabIndex = 10;
             // 
             // btn_Frm_Active
@@ -141,23 +141,24 @@
             this.btn_systemInfo.Text = "Info";
             this.btn_systemInfo.UseVisualStyleBackColor = false;
             // 
-            // btn_DashBoard
+            // btn_Manipulate
             // 
-            this.btn_DashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.btn_DashBoard.FlatAppearance.BorderSize = 0;
-            this.btn_DashBoard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
-            this.btn_DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DashBoard.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DashBoard.ForeColor = System.Drawing.Color.White;
-            this.btn_DashBoard.Image = ((System.Drawing.Image)(resources.GetObject("btn_DashBoard.Image")));
-            this.btn_DashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_DashBoard.Location = new System.Drawing.Point(21, 188);
-            this.btn_DashBoard.Name = "btn_DashBoard";
-            this.btn_DashBoard.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btn_DashBoard.Size = new System.Drawing.Size(312, 57);
-            this.btn_DashBoard.TabIndex = 1;
-            this.btn_DashBoard.Text = "Manipulate";
-            this.btn_DashBoard.UseVisualStyleBackColor = false;
+            this.btn_Manipulate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.btn_Manipulate.FlatAppearance.BorderSize = 0;
+            this.btn_Manipulate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
+            this.btn_Manipulate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Manipulate.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Manipulate.ForeColor = System.Drawing.Color.White;
+            this.btn_Manipulate.Image = ((System.Drawing.Image)(resources.GetObject("btn_Manipulate.Image")));
+            this.btn_Manipulate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Manipulate.Location = new System.Drawing.Point(21, 188);
+            this.btn_Manipulate.Name = "btn_Manipulate";
+            this.btn_Manipulate.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btn_Manipulate.Size = new System.Drawing.Size(312, 57);
+            this.btn_Manipulate.TabIndex = 1;
+            this.btn_Manipulate.Text = "Manipulate";
+            this.btn_Manipulate.UseVisualStyleBackColor = false;
+            this.btn_Manipulate.Click += new System.EventHandler(this.btn_DashBoard_Click);
             // 
             // btn_Minimizesd
             // 
@@ -212,14 +213,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1655, 974);
+            this.ClientSize = new System.Drawing.Size(1655, 899);
             this.Controls.Add(this.Toppannel);
             this.Controls.Add(this.Panel_SideBar);
             this.Controls.Add(this.btn_Minimizesd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Name = "frm_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_ImageCalculator";
+            this.Text = " ";
             this.Panel_SideBar.ResumeLayout(false);
             this.Panel_SideBar.PerformLayout();
             this.Toppannel.ResumeLayout(false);
@@ -236,7 +238,7 @@
         private System.Windows.Forms.Button btn_Setting;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_systemInfo;
-        private System.Windows.Forms.Button btn_DashBoard;
+        private System.Windows.Forms.Button btn_Manipulate;
         private System.Windows.Forms.Button btn_Minimizesd;
         private XanderUI.XUIObjectEllipse xuiObjectEllipse1;
         private XanderUI.XUIGradientPanel Toppannel;

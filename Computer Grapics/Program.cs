@@ -16,7 +16,7 @@ namespace Computer_Grapics
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ImageManipulator());
+            Application.Run(new frm_Dashboard());
         }
     }
 }

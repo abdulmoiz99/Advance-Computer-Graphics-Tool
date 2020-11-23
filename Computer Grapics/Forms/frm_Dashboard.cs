@@ -21,5 +21,15 @@ namespace Computer_Grapics
         {
             Application.Exit();
         }
+
+        private void btn_DashBoard_Click(object sender, EventArgs e)
+        {
+            PanelFloat.Height = btn_Manipulate.Height;
+            PanelFloat.Top = btn_Manipulate.Top;
+            var NEW = new frm_ImageManipulator();
+            NEW.MdiParent = this;
+            NEW.Dock = DockStyle.Fill;
+            NEW.Show();
+        }
     }
 }

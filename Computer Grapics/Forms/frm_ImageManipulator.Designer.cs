@@ -56,7 +56,7 @@
             this.xuiCustomGroupbox1.BorderWidth = 1;
             this.xuiCustomGroupbox1.Controls.Add(this.pb_imageA);
             this.xuiCustomGroupbox1.Controls.Add(this.btn_browseImage1);
-            this.xuiCustomGroupbox1.Location = new System.Drawing.Point(24, 12);
+            this.xuiCustomGroupbox1.Location = new System.Drawing.Point(24, 66);
             this.xuiCustomGroupbox1.Name = "xuiCustomGroupbox1";
             this.xuiCustomGroupbox1.ShowText = true;
             this.xuiCustomGroupbox1.Size = new System.Drawing.Size(430, 357);
@@ -103,7 +103,7 @@
             this.xuiCustomGroupbox2.BorderWidth = 1;
             this.xuiCustomGroupbox2.Controls.Add(this.pb_imageB);
             this.xuiCustomGroupbox2.Controls.Add(this.btn_browseImage2);
-            this.xuiCustomGroupbox2.Location = new System.Drawing.Point(24, 375);
+            this.xuiCustomGroupbox2.Location = new System.Drawing.Point(24, 429);
             this.xuiCustomGroupbox2.Name = "xuiCustomGroupbox2";
             this.xuiCustomGroupbox2.ShowText = true;
             this.xuiCustomGroupbox2.Size = new System.Drawing.Size(430, 357);
@@ -157,7 +157,7 @@
             this.btn_MultiplyImage.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
             this.btn_MultiplyImage.HoverTextColor = System.Drawing.Color.White;
             this.btn_MultiplyImage.ImagePosition = XanderUI.XUISuperButton.imgPosition.Left;
-            this.btn_MultiplyImage.Location = new System.Drawing.Point(601, 285);
+            this.btn_MultiplyImage.Location = new System.Drawing.Point(601, 339);
             this.btn_MultiplyImage.Name = "btn_MultiplyImage";
             this.btn_MultiplyImage.SelectedBackColor = System.Drawing.Color.LimeGreen;
             this.btn_MultiplyImage.SelectedTextColor = System.Drawing.Color.White;
@@ -181,7 +181,7 @@
             this.btn_SubtractImage.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
             this.btn_SubtractImage.HoverTextColor = System.Drawing.Color.White;
             this.btn_SubtractImage.ImagePosition = XanderUI.XUISuperButton.imgPosition.Left;
-            this.btn_SubtractImage.Location = new System.Drawing.Point(531, 331);
+            this.btn_SubtractImage.Location = new System.Drawing.Point(531, 385);
             this.btn_SubtractImage.Name = "btn_SubtractImage";
             this.btn_SubtractImage.SelectedBackColor = System.Drawing.Color.LimeGreen;
             this.btn_SubtractImage.SelectedTextColor = System.Drawing.Color.White;
@@ -205,7 +205,7 @@
             this.btn_DivideImage.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
             this.btn_DivideImage.HoverTextColor = System.Drawing.Color.White;
             this.btn_DivideImage.ImagePosition = XanderUI.XUISuperButton.imgPosition.Left;
-            this.btn_DivideImage.Location = new System.Drawing.Point(601, 377);
+            this.btn_DivideImage.Location = new System.Drawing.Point(601, 431);
             this.btn_DivideImage.Name = "btn_DivideImage";
             this.btn_DivideImage.SelectedBackColor = System.Drawing.Color.LimeGreen;
             this.btn_DivideImage.SelectedTextColor = System.Drawing.Color.White;
@@ -228,7 +228,7 @@
             this.btn_AddImage.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
             this.btn_AddImage.HoverTextColor = System.Drawing.Color.White;
             this.btn_AddImage.ImagePosition = XanderUI.XUISuperButton.imgPosition.Left;
-            this.btn_AddImage.Location = new System.Drawing.Point(671, 331);
+            this.btn_AddImage.Location = new System.Drawing.Point(671, 385);
             this.btn_AddImage.Name = "btn_AddImage";
             this.btn_AddImage.SelectedBackColor = System.Drawing.Color.LimeGreen;
             this.btn_AddImage.SelectedTextColor = System.Drawing.Color.White;
@@ -244,7 +244,7 @@
             this.xuiCustomGroupbox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.xuiCustomGroupbox3.BorderWidth = 1;
             this.xuiCustomGroupbox3.Controls.Add(this.pb_ImageResults);
-            this.xuiCustomGroupbox3.Location = new System.Drawing.Point(793, 126);
+            this.xuiCustomGroupbox3.Location = new System.Drawing.Point(793, 180);
             this.xuiCustomGroupbox3.Name = "xuiCustomGroupbox3";
             this.xuiCustomGroupbox3.ShowText = true;
             this.xuiCustomGroupbox3.Size = new System.Drawing.Size(430, 520);
@@ -276,7 +276,7 @@
             this.xuiSuperButton3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
             this.xuiSuperButton3.HoverTextColor = System.Drawing.Color.White;
             this.xuiSuperButton3.ImagePosition = XanderUI.XUISuperButton.imgPosition.Left;
-            this.xuiSuperButton3.Location = new System.Drawing.Point(601, 331);
+            this.xuiSuperButton3.Location = new System.Drawing.Point(601, 385);
             this.xuiSuperButton3.Name = "xuiSuperButton3";
             this.xuiSuperButton3.SelectedBackColor = System.Drawing.Color.LimeGreen;
             this.xuiSuperButton3.SelectedTextColor = System.Drawing.Color.White;
@@ -291,7 +291,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1262, 771);
+            this.ClientSize = new System.Drawing.Size(1262, 870);
             this.Controls.Add(this.xuiCustomGroupbox3);
             this.Controls.Add(this.btn_AddImage);
             this.Controls.Add(this.btn_DivideImage);
@@ -301,7 +301,7 @@
             this.Controls.Add(this.xuiCustomGroupbox2);
             this.Controls.Add(this.xuiCustomGroupbox1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frm_ImageManipulator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
