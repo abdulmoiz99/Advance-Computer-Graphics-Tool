@@ -31,5 +31,15 @@ namespace Computer_Grapics
             NEW.Dock = DockStyle.Fill;
             NEW.Show();
         }
+
+        private void btn_AnimateSprite_Click(object sender, EventArgs e)
+        {
+            PanelFloat.Height = btn_AnimateSprite.Height;
+            PanelFloat.Top = btn_AnimateSprite.Top;
+            var NEW = new Form1();
+            NEW.MdiParent = this;
+            NEW.Dock = DockStyle.Fill;
+            NEW.Show();
+        }
     }
 }

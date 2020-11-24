@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Dashboard));
             this.PanelFloat = new System.Windows.Forms.Panel();
             this.Panel_SideBar = new System.Windows.Forms.Panel();
-            this.btn_Frm_Active = new System.Windows.Forms.Button();
+            this.btn_AnimateSprite = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Setting = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@
             // Panel_SideBar
             // 
             this.Panel_SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.Panel_SideBar.Controls.Add(this.btn_Frm_Active);
+            this.Panel_SideBar.Controls.Add(this.btn_AnimateSprite);
             this.Panel_SideBar.Controls.Add(this.label1);
             this.Panel_SideBar.Controls.Add(this.btn_Setting);
             this.Panel_SideBar.Controls.Add(this.button1);
@@ -67,26 +67,27 @@
             this.Panel_SideBar.ForeColor = System.Drawing.Color.DarkCyan;
             this.Panel_SideBar.Location = new System.Drawing.Point(0, 0);
             this.Panel_SideBar.Name = "Panel_SideBar";
-            this.Panel_SideBar.Size = new System.Drawing.Size(336, 899);
+            this.Panel_SideBar.Size = new System.Drawing.Size(368, 899);
             this.Panel_SideBar.TabIndex = 10;
             // 
-            // btn_Frm_Active
+            // btn_AnimateSprite
             // 
-            this.btn_Frm_Active.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
-            this.btn_Frm_Active.FlatAppearance.BorderSize = 0;
-            this.btn_Frm_Active.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
-            this.btn_Frm_Active.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Frm_Active.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Frm_Active.ForeColor = System.Drawing.Color.White;
-            this.btn_Frm_Active.Image = ((System.Drawing.Image)(resources.GetObject("btn_Frm_Active.Image")));
-            this.btn_Frm_Active.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Frm_Active.Location = new System.Drawing.Point(21, 260);
-            this.btn_Frm_Active.Name = "btn_Frm_Active";
-            this.btn_Frm_Active.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btn_Frm_Active.Size = new System.Drawing.Size(312, 57);
-            this.btn_Frm_Active.TabIndex = 9;
-            this.btn_Frm_Active.Text = "Sprite Sheet";
-            this.btn_Frm_Active.UseVisualStyleBackColor = false;
+            this.btn_AnimateSprite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.btn_AnimateSprite.FlatAppearance.BorderSize = 0;
+            this.btn_AnimateSprite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
+            this.btn_AnimateSprite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AnimateSprite.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AnimateSprite.ForeColor = System.Drawing.Color.White;
+            this.btn_AnimateSprite.Image = ((System.Drawing.Image)(resources.GetObject("btn_AnimateSprite.Image")));
+            this.btn_AnimateSprite.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_AnimateSprite.Location = new System.Drawing.Point(21, 260);
+            this.btn_AnimateSprite.Name = "btn_AnimateSprite";
+            this.btn_AnimateSprite.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btn_AnimateSprite.Size = new System.Drawing.Size(344, 57);
+            this.btn_AnimateSprite.TabIndex = 9;
+            this.btn_AnimateSprite.Text = "Animate Sprite";
+            this.btn_AnimateSprite.UseVisualStyleBackColor = false;
+            this.btn_AnimateSprite.Click += new System.EventHandler(this.btn_AnimateSprite_Click);
             // 
             // label1
             // 
@@ -119,7 +120,7 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(336, 172);
+            this.button1.Size = new System.Drawing.Size(368, 172);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -136,9 +137,9 @@
             this.btn_systemInfo.Location = new System.Drawing.Point(21, 332);
             this.btn_systemInfo.Name = "btn_systemInfo";
             this.btn_systemInfo.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btn_systemInfo.Size = new System.Drawing.Size(312, 57);
+            this.btn_systemInfo.Size = new System.Drawing.Size(344, 57);
             this.btn_systemInfo.TabIndex = 6;
-            this.btn_systemInfo.Text = "Info";
+            this.btn_systemInfo.Text = "About";
             this.btn_systemInfo.UseVisualStyleBackColor = false;
             // 
             // btn_Manipulate
@@ -154,7 +155,7 @@
             this.btn_Manipulate.Location = new System.Drawing.Point(21, 188);
             this.btn_Manipulate.Name = "btn_Manipulate";
             this.btn_Manipulate.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.btn_Manipulate.Size = new System.Drawing.Size(312, 57);
+            this.btn_Manipulate.Size = new System.Drawing.Size(344, 57);
             this.btn_Manipulate.TabIndex = 1;
             this.btn_Manipulate.Text = "Manipulate";
             this.btn_Manipulate.UseVisualStyleBackColor = false;
@@ -185,10 +186,10 @@
             this.Toppannel.BottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(192)))), ((int)(((byte)(224)))));
             this.Toppannel.Controls.Add(this.btn_close);
             this.Toppannel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Toppannel.Location = new System.Drawing.Point(336, 0);
+            this.Toppannel.Location = new System.Drawing.Point(368, 0);
             this.Toppannel.Name = "Toppannel";
             this.Toppannel.PrimerColor = System.Drawing.Color.White;
-            this.Toppannel.Size = new System.Drawing.Size(1319, 37);
+            this.Toppannel.Size = new System.Drawing.Size(1287, 37);
             this.Toppannel.Style = XanderUI.XUIGradientPanel.GradientStyle.Corners;
             this.Toppannel.TabIndex = 13;
             this.Toppannel.TopLeft = System.Drawing.Color.DeepSkyBlue;
@@ -202,7 +203,7 @@
             this.btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
-            this.btn_close.Location = new System.Drawing.Point(1260, 0);
+            this.btn_close.Location = new System.Drawing.Point(1228, 0);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(57, 35);
             this.btn_close.TabIndex = 9;
@@ -233,7 +234,7 @@
 
         private System.Windows.Forms.Panel PanelFloat;
         private System.Windows.Forms.Panel Panel_SideBar;
-        private System.Windows.Forms.Button btn_Frm_Active;
+        private System.Windows.Forms.Button btn_AnimateSprite;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Setting;
         private System.Windows.Forms.Button button1;

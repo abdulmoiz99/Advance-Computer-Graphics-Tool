@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ManipulateImage.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\frm_AnimateSprite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\frm_AnimateSprite.Designer.cs">
+      <DependentUpon>frm_AnimateSprite.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_Dashboard.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,17 @@
     <Compile Include="Forms\frm_ImageManipulator.Designer.cs">
       <DependentUpon>frm_ImageManipulator.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_SpriteSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SpriteSheet.Designer.cs">
+      <DependentUpon>frm_SpriteSheet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frm_AnimateSprite.resx">
+      <DependentUpon>frm_AnimateSprite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Dashboard.resx">
       <DependentUpon>frm_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
